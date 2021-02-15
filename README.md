@@ -43,14 +43,14 @@ const Button = styled("button", {
 });
 ```
 
-`stitches-mixin` offers an alternative; allowing snippets of static CSS to be included via the `@include` key:
+`stitches-mixin` offers an alternative; allowing snippets of static CSS to be included via the `include` key:
 
 ```ts
 // with stitches-mixins
 const Button = styled("button", {
-  '@include': 'someUtilKey'
+  include: 'someUtilKey'
   // *or* include multiple…
-  '@include': ['someUtilKey', 'someOtherUtilKey']
+  include: ['someUtilKey', 'someOtherUtilKey']
 });
 ```
 
@@ -74,7 +74,7 @@ To kickstart your mixins toolbox, `stitches-mixins` includes the following by de
    npm i stitches-mixins
    ```
 
-2. In your [Stitches config][stitches:config], assign `mixins()` to a new `@include` `util`:
+2. In your [Stitches config][stitches:config], assign `mixins()` to a new `include` `util`:
 
    ```tsx
    // stitches.config.ts
@@ -85,24 +85,24 @@ To kickstart your mixins toolbox, `stitches-mixins` includes the following by de
      theme: {},
      utils: {
        // with custom mixins
-       "@include": mixins({
+       include: mixins({
          orchidShadow: {
            boxShadow: "0 25px 50px -12px orchid",
          },
        }),
        // …or without
-       "@include": mixins(),
+       include: mixins(),
      },
    });
    ```
 
-   > Note: Your `stitches-mixins` util doesn't _need_ to be called `@include`, it can be anything you want it to be (I just like it, OK).
+   > Note: Your `stitches-mixins` util doesn't _need_ to be called `include`, it can be anything you want it to be.
 
 ## Usage
 
-Use `@include` like you would with any other [Stitches `util`][stitches:utils]
+Use `include` like you would with any other [Stitches `util`][stitches:utils]
 
-> 💡 Using `@include` at the beginning of your style object is heavily recommended, allowing for easy overriding later
+> 💡 Using `include` at the beginning of your style object is heavily recommended, allowing for easy overriding later
 
 ### Single-use
 
@@ -111,7 +111,7 @@ Use `@include` like you would with any other [Stitches `util`][stitches:utils]
 import { styled } from "../stitches.config.ts";
 
 const Card = styled("div", {
-  "@include": "box",
+  include: "box",
   // ...styles
 });
 ```
@@ -123,7 +123,7 @@ const Card = styled("div", {
 import { styled } from "../stitches.config.ts";
 
 const Card = styled("div", {
-  "@include": ["box", "orchidShadow"],
+  include: ["box", "orchidShadow"],
   // ...styles
 });
 ```
@@ -137,9 +137,9 @@ Like other `utils`, mixins can be used inside other selectors:
 import { styled } from "../stitches.config.ts";
 
 const SkipLink = styled("a", {
-  "@include": ["box", "screenReaderOnly"],
+  include: ["box", "screenReaderOnly"],
   "&:focus": {
-    "@include": "notScreenReaderOnly",
+    include: "notScreenReaderOnly",
   },
   // ...styles
 });

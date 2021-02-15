@@ -14,12 +14,12 @@ describe("mixins", () => {
     const stitches = createCss({
       theme,
       utils: {
-        "@include": mixins(),
+        include: mixins(),
       },
     });
 
     const component = stitches.css({
-      "@include": "box",
+      include: "box",
       margin: "$md",
     });
 
@@ -35,12 +35,12 @@ describe("mixins", () => {
     const stitches = createCss({
       theme,
       utils: {
-        "@include": mixins(),
+        include: mixins(),
       },
     });
 
     const component = stitches.css({
-      "@include": ["box", "minHeightScreen"],
+      include: ["box", "minHeightScreen"],
       margin: "$md",
     });
 
@@ -56,12 +56,12 @@ describe("mixins", () => {
     const stitches = createCss({
       theme,
       utils: {
-        "@include": mixins(customMixins),
+        include: mixins(customMixins),
       },
     });
 
     const component = stitches.css({
-      "@include": ["box", "orchidShadow"],
+      include: ["box", "orchidShadow"],
     });
 
     // CSS should contain theme etc…
@@ -76,7 +76,7 @@ describe("mixins", () => {
     const stitches = createCss({
       theme,
       utils: {
-        "@include": mixins(customMixins),
+        include: mixins(customMixins),
         someShorthandUtil: (config) => (value: boolean) =>
           value && {
             boxShadow: "0 25px 50px -12px orchid",
@@ -85,9 +85,9 @@ describe("mixins", () => {
     });
 
     const component = stitches.css({
-      "@include": ["box", "orchidShadow", "screenReaderOnly"],
+      include: ["box", "orchidShadow", "screenReaderOnly"],
       "&:focus": {
-        "@include": "notScreenReaderOnly",
+        include: "notScreenReaderOnly",
       },
     });
 
