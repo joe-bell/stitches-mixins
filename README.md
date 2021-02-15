@@ -58,13 +58,13 @@ const Button = styled("button", {
 
 To kickstart your mixins toolbox, `stitches-mixins` includes the following by default:
 
-| Key                   | Description                                                                                                                     |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `box`                 | Layout primitive. <br />_Credit: [Reflexbox](#credit-box)_                                                                      |
-| `breakout`            | "Breakout" of a parent's `maxWidth` to fill the viewport width. <br />_Credit: [Sven Wolfermann][credit:breakout]_              |
-| `minHeightScreen`     | Fills the viewport height, with additional support for iOS Safari.                                                              |
-| `screenReaderOnly`    | Hides an element visually without hiding from screen readers and other ATs. <br />_Credit: [Tailwind][credit:screenreaderonly]_ |
-| `notScreenReaderOnly` | Reverts styles set by `screenReaderOnly`. <br />_Credit: [Tailwind][credit:screenreaderonly]_                                   |
+| Key                   | Description                                                                                                                                    |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `box`                 | Layout primitive. <br /><small>(Credit: [Reflexbox](#credit-box))</small>                                                                      |
+| `breakout`            | "Breakout" of a parent's `maxWidth` to fill the viewport width. <br /><small>(Credit: [Sven Wolfermann][credit:breakout])</small>              |
+| `minHeightScreen`     | Fills the viewport height, with additional support for iOS Safari.                                                                             |
+| `screenReaderOnly`    | Hides an element visually without hiding from screen readers and other ATs. <br /><small>(Credit: [Tailwind][credit:screenreaderonly])</small> |
+| `notScreenReaderOnly` | Reverts styles set by `screenReaderOnly`. <br /><small>(Credit: [Tailwind][credit:screenreaderonly])</small>                                   |
 
 ## Setup
 
