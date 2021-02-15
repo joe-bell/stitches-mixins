@@ -1,7 +1,7 @@
 {
   "name": "stitches-mixins",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.4",
+  "description": "Sass-style shorthand utils for Stitches 🥣",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -10,6 +10,16 @@
     "dist",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joe-bell/stitches-mixins.git"
+  },
+  "author": "Joe Bell <joe@joebell.co.uk>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/joe-bell/stitches-mixins/issues"
+  },
+  "homepage": "https://github.com/joe-bell/stitches-mixins#readme",
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
@@ -32,6 +42,7 @@
     ]
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "microbundle --no-compress --tsconfig tsconfig.json",
     "dev": "npm run build -- watch",
     "clean": "rimraf {dist,.rts2*}",
@@ -42,16 +53,6 @@
     "format": "prettier --write",
     "commit": "git-cz"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joe-bell/stitches-mixins.git"
-  },
-  "author": "Joe Bell <joe@joebell.co.uk>",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/joe-bell/stitches-mixins/issues"
-  },
-  "homepage": "https://github.com/joe-bell/stitches-mixins#readme",
   "peerDependencies": {
     "@stitches/core": ">= 0.1.0-canary.3"
   },
