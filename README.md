@@ -48,9 +48,9 @@ const Button = styled("button", {
 ```ts
 // with stitches-mixins
 const Button = styled("button", {
-  include: 'someUtilKey'
+  include: "someUtilKey",
   // *or* include multiple…
-  include: ['someUtilKey', 'someOtherUtilKey']
+  include: ["someUtilKey", "someOtherUtilKey"],
 });
 ```
 
