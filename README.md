@@ -14,7 +14,7 @@
 <a href="https://www.npmjs.com/package/stitches-mixins">
   <img alt="NPM Downloads" src="https://badgen.net/npm/dm/stitches-mixins" />
 </a>
-<a href="https://twitter.com/joe_bell">
+<a href="https://twitter.com/joebell_">
   <img alt="Follow @joebell_ on Twitter" src="https://img.shields.io/twitter/follow/joebell_.svg?style=social&label=Follow" />
 </a>
 
