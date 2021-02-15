@@ -16,7 +16,6 @@ export interface IDefaultStitchesMixins
 
 export const defaultMixins: IDefaultStitchesMixins = {
   box: {
-    margin: 0,
     minWidth: 0,
     boxSizing: "border-box",
     "&::before, &::after": {
