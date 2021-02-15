@@ -1,6 +1,8 @@
 # Stitches Mixins
 
-> Sass-style shorthand utils for [Stitches][stitches] 🥣
+> **Sass-style shorthand utils for [Stitches][stitches]** 🥣
+>
+> [View the CodeSandbox Demo ↗][demo]
 
 <a href="https://www.npmjs.com/package/stitches-mixins">
   <img alt="NPM Version" src="https://badgen.net/npm/v/stitches-mixins" />
@@ -102,7 +104,9 @@ To kickstart your mixins toolbox, `stitches-mixins` includes the following by de
 
 ## Usage
 
-Use `include` like you would with any other [Stitches `util`][stitches:utils]
+Use `include` like you would with any other [Stitches `util`][stitches:utils].
+
+[See the CodeSandbox Demo ↗][demo]
 
 > 💡 Using `include` at the beginning of your style object is heavily recommended, allowing for easy overriding later
 
@@ -147,6 +151,7 @@ const SkipLink = styled("a", {
 });
 ```
 
+[demo]: https://joebell.co.uk/stitches-mixins
 [credit:box]: https://github.com/rebassjs/rebass/tree/master/packages/reflexbox
 [credit:breakout]: https://codepen.io/maddesigns/pen/rOMgpQ/
 [credit:screenreaderonly]: https://tailwindcss.com/docs/screen-readers
