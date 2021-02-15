@@ -1,5 +1,7 @@
 import { InternalCSS } from "@stitches/core";
 
+// @peduarte - "you probably shouldn't use the InternalCSS type"
+// me - https://i.gifer.com/NMHI.gif
 export type TCSS = InternalCSS;
 
 export type TDefaultStitchesMixin =
@@ -13,7 +15,6 @@ export interface IDefaultStitchesMixins
   extends Record<TDefaultStitchesMixin, TCSS> {}
 
 export const defaultMixins: IDefaultStitchesMixins = {
-  // https://github.com/rebassjs/rebass/tree/master/packages/reflexbox
   box: {
     margin: 0,
     minWidth: 0,
@@ -22,7 +23,6 @@ export const defaultMixins: IDefaultStitchesMixins = {
       boxSizing: "inherit",
     },
   },
-  //https://codepen.io/maddesigns/pen/rOMgpQ/
   breakout: {
     width: "100vw",
     position: "relative",
@@ -37,7 +37,6 @@ export const defaultMixins: IDefaultStitchesMixins = {
       minHeight: "-webkit-fill-available",
     },
   },
-  // https://tailwindcss.com/docs/screen-readers#class-reference
   screenReaderOnly: {
     position: "absolute",
     width: "1px",
