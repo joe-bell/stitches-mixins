@@ -108,7 +108,7 @@ Use `include` like you would with any other [Stitches `util`][stitches:utils]
 
 ```tsx
 // components/card.ts
-import { styled } from "../stitches.config.ts";
+import { styled } from "../stitches.config";
 
 const Card = styled("div", {
   include: "box",
@@ -120,7 +120,7 @@ const Card = styled("div", {
 
 ```tsx
 // components/card.ts
-import { styled } from "../stitches.config.ts";
+import { styled } from "../stitches.config";
 
 const Card = styled("div", {
   include: ["box", "orchidShadow"],
@@ -134,7 +134,7 @@ Like other `utils`, mixins can be used inside other selectors:
 
 ```tsx
 // components/skip-link.ts
-import { styled } from "../stitches.config.ts";
+import { styled } from "../stitches.config";
 
 const SkipLink = styled("a", {
   include: ["box", "screenReaderOnly"],
