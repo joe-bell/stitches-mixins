@@ -43,7 +43,9 @@ const Button = styled("button", {
 });
 ```
 
-`stitches-mixin` offers an alternative; allowing snippets of static CSS to be included via the `include` key:
+### Solution
+
+`stitches-mixins` offers an alternative; allowing snippets of static CSS to be included via the `include` key:
 
 ```ts
 // with stitches-mixins
