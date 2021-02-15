@@ -1,6 +1,6 @@
 # Stitches Mixins
 
-> 🥣 Sass-style shorthand helpers for [Stitches][stitches]
+> Sass-style shorthand utils for [Stitches][stitches] 🥣
 
 <a href="https://www.npmjs.com/package/stitches-mixins">
   <img alt="NPM Version" src="https://badgen.net/npm/v/stitches-mixins" />
@@ -20,43 +20,122 @@
 
 ## Table of Contents
 
+1. [Introduction](#introduction)
+1. [Default Mixins](#mixins)
 1. [Setup](#setup)
-2. [Usage](#usage)
+1. [Usage](#usage)
 
-## Setup
+## Introduction
 
-```tsx
-// stitches.config.ts
-import { createCss } from "@stitches/react";
-import { mixins } from "stitches-mixins";
+[Stitches `utils`][stitches:utils] are a great tool for reusing dynamic snippets of CSS across your project.
 
-export const { css, styled } = createCss({
-  theme: {},
-  utils: {
-    // with custom mixins
-    "@include": mixins({
-      orchidShadow: {
-        boxShadow: "0 25px 50px -12px orchid",
-      },
-    }),
-    // …or without
-    "@include": mixins(),
-  },
+Unfortunately, for `utils` that **don't** require a `value`, [shorthand isn't an option][mdn:initializer].
+
+A common workaround is to set the `util` value to `true`:
+
+```ts
+// without stitches-mixins
+const Button = styled("button", {
+  someUtilKey: true,
+  someOtherUtilKey: true,
+  color: "$gray900",
+  // …styles
 });
 ```
 
+`stitches-mixin` offers an alternative; allowing snippets of static CSS to be included via the `@include` key:
+
+```ts
+// with stitches-mixins
+const Button = styled("button", {
+  '@include': 'someUtilKey'
+  // *or* include multiple…
+  '@include': ['someUtilKey', 'someOtherUtilKey']
+});
+```
+
+## Default Mixins
+
+To kickstart your mixins toolbox, `stitches-mixins` includes the following by default:
+
+| Key                   | Description                                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `box`                 | Layout primitive. <br />_Credit: [Reflexbox](#credit-box)_                                                                      |
+| `breakout`            | "Breakout" of a parent's `maxWidth` to fill the viewport width. <br />_Credit: [Sven Wolfermann][credit:breakout]_              |
+| `minHeightScreen`     | Fills the viewport height, with additional support for iOS Safari.                                                              |
+| `screenReaderOnly`    | Hides an element visually without hiding from screen readers and other ATs. <br />_Credit: [Tailwind][credit:screenreaderonly]_ |
+| `notScreenReaderOnly` | Reverts styles set by `screenReaderOnly`. <br />_Credit: [Tailwind][credit:screenreaderonly]_                                   |
+
+## Setup
+
+1. Install the package via your favourite package manager:
+
+   ```sh
+   npm i stitches-mixins
+   ```
+
+2. In your [Stitches config][stitches:config], assign `mixins()` to a new `@include` `util`:
+
+   ```tsx
+   // stitches.config.ts
+   import { createCss } from "@stitches/react";
+   import { mixins } from "stitches-mixins";
+
+   export const { css, styled } = createCss({
+     theme: {},
+     utils: {
+       // with custom mixins
+       "@include": mixins({
+         orchidShadow: {
+           boxShadow: "0 25px 50px -12px orchid",
+         },
+       }),
+       // …or without
+       "@include": mixins(),
+     },
+   });
+   ```
+
+   > Note: Your `stitches-mixins` util doesn't _need_ to be called `@include`, it can be anything you want it to be (I just like it, OK).
+
 ## Usage
 
+Use `@include` like you would with any other [Stitches `util`][stitches:utils]
+
+> 💡 Using `@include` at the beginning of your style object is heavily recommended, allowing for easy overriding later
+
+### Single-use
+
 ```tsx
+// components/card.ts
+import { styled } from "../stitches.config.ts";
+
+const Card = styled("div", {
+  "@include": "box",
+  // ...styles
+});
+```
+
+### Combining Mixins
+
+```tsx
+// components/card.ts
+import { styled } from "../stitches.config.ts";
+
 const Card = styled("div", {
   "@include": ["box", "orchidShadow"],
   // ...styles
 });
 ```
 
-### Multiple
+### Nested
+
+Like other `utils`, mixins can be used inside other selectors:
 
 ```tsx
+// components/skip-link.ts
+import { styled } from "../stitches.config.ts";
+
 const SkipLink = styled("a", {
   "@include": ["box", "screenReaderOnly"],
   "&:focus": {
@@ -66,4 +145,10 @@ const SkipLink = styled("a", {
 });
 ```
 
+[credit:box]: https://github.com/rebassjs/rebass/tree/master/packages/reflexbox
+[credit:breakout]: https://codepen.io/maddesigns/pen/rOMgpQ/
+[credit:screenreaderonly]: https://tailwindcss.com/docs/screen-readers
+[mdn:initializer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer
 [stitches]: https://github.com/modulz/stitches
+[stitches:config]: https://stitches.dev/docs/installation#create-your-config-file
+[stitches:utils]: https://stitches.dev/docs/utils
