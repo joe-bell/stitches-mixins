@@ -60,7 +60,7 @@ To kickstart your mixins toolbox, `stitches-mixins` includes the following by de
 
 | Key                   | Description                                                                                                                                    |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `box`                 | Layout primitive. <br /><small>(Credit: [Reflexbox](#credit-box))</small>                                                                      |
+| `box`                 | Layout primitive. <br /><small>(Credit: [Reflexbox][credit:box])</small>                                                                       |
 | `breakout`            | "Breakout" of a parent's `maxWidth` to fill the viewport width. <br /><small>(Credit: [Sven Wolfermann][credit:breakout])</small>              |
 | `minHeightScreen`     | Fills the viewport height, with additional support for iOS Safari.                                                                             |
 | `screenReaderOnly`    | Hides an element visually without hiding from screen readers and other ATs. <br /><small>(Credit: [Tailwind][credit:screenreaderonly])</small> |
