@@ -14,10 +14,10 @@
   <a href="https://www.npmjs.com/package/stitches-mixins">
     <img alt="NPM Version" src="https://badgen.net/npm/v/stitches-mixins" />
   </a>
-  <a href="https://badgen.net/npm/types/stitches-mixins">
+  <a href="https://www.npmjs.com/package/stitches-mixins">
     <img alt="Types Included" src="https://badgen.net/npm/types/stitches-mixins" />
   </a>
-  <a href="https://badgen.net/github/license/joe-bell/stitches-mixins">
+  <a href="https://github.com/joe-bell/stitches-mixins/blob/main/LICENSE">
     <img alt="Apache-2.0 License" src="https://badgen.net/github/license/joe-bell/stitches-mixins" />
   </a>
   <a href="https://www.npmjs.com/package/stitches-mixins">
