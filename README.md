@@ -81,6 +81,10 @@ To kickstart your mixins toolbox, `stitches-mixins` includes the following by de
 | `screenReaderOnly`    | Hides an element visually without hiding from screen readers and other ATs <sup id="credit_note-3">[[3]](#credit_ref-3)</sup> |
 | `notScreenReaderOnly` | Reverts styles set by `screenReaderOnly` <sup id="credit_note-3">[[3]](#credit_ref-3)</sup>                                   |
 
+### Overriding
+
+Default mixins can be overridden by defining custom mixins with the same `key`.
+
 ## Setup
 
 1. Install the package via your favourite package manager:
