@@ -1,6 +1,6 @@
 {
   "name": "stitches-mixins",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Sass-style shorthand utils for Stitches 🥣",
   "source": "src/index.ts",
   "main": "dist/index.js",
