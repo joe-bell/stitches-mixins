@@ -1,31 +1,42 @@
-# Stitches Mixins
+<h1 align="center">Stitches Mixins</h1>
 
-> **Sass-style shorthand utils for [Stitches][stitches]** 🥣
->
-> [View the CodeSandbox Demo ↗][demo]
+<p align="center">
+  <strong>
+    Sass-style shorthand utils for <a href="https://github.com/modulz/stitches">Stitches</a> 🥣
+  </strong>
+</p>
 
-<a href="https://www.npmjs.com/package/stitches-mixins">
-  <img alt="NPM Version" src="https://badgen.net/npm/v/stitches-mixins" />
-</a>
-<a href="https://badgen.net/npm/types/stitches-mixins">
-  <img alt="Types Included" src="https://badgen.net/npm/types/stitches-mixins" />
-</a>
-<a href="https://badgen.net/github/license/joe-bell/stitches-mixins">
-  <img alt="Apache-2.0 License" src="https://badgen.net/github/license/joe-bell/stitches-mixins" />
-</a>
-<a href="https://www.npmjs.com/package/stitches-mixins">
-  <img alt="NPM Downloads" src="https://badgen.net/npm/dm/stitches-mixins" />
-</a>
-<a href="https://twitter.com/joebell_">
-  <img alt="Follow @joebell_ on Twitter" src="https://img.shields.io/twitter/follow/joebell_.svg?style=social&label=Follow" />
-</a>
+<p align="center">
+  <a href="https://joebell.co.uk/stitches-mixins">View the CodeSandbox Demo 🪣</a>
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/stitches-mixins">
+    <img alt="NPM Version" src="https://badgen.net/npm/v/stitches-mixins" />
+  </a>
+  <a href="https://badgen.net/npm/types/stitches-mixins">
+    <img alt="Types Included" src="https://badgen.net/npm/types/stitches-mixins" />
+  </a>
+  <a href="https://badgen.net/github/license/joe-bell/stitches-mixins">
+    <img alt="Apache-2.0 License" src="https://badgen.net/github/license/joe-bell/stitches-mixins" />
+  </a>
+  <a href="https://www.npmjs.com/package/stitches-mixins">
+    <img alt="NPM Downloads" src="https://badgen.net/npm/dm/stitches-mixins" />
+  </a>
+  <a href="https://twitter.com/joebell_">
+    <img alt="Follow @joebell_ on Twitter" src="https://img.shields.io/twitter/follow/joebell_.svg?style=social&label=Follow" />
+  </a>
+</p>
+
+<br />
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
-1. [Default Mixins](#mixins)
+1. [Default Mixins](#default-mixins)
 1. [Setup](#setup)
 1. [Usage](#usage)
+1. [Credit](#credit)
 
 ## Introduction
 
@@ -62,13 +73,13 @@ const Button = styled("button", {
 
 To kickstart your mixins toolbox, `stitches-mixins` includes the following by default:
 
-| Key                   | Description                                                                                                                                    |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `box`                 | Layout primitive. <br /><small>(Credit: [Reflexbox][credit:box])</small>                                                                       |
-| `breakout`            | "Breakout" of a parent's `maxWidth` to fill the viewport width. <br /><small>(Credit: [Sven Wolfermann][credit:breakout])</small>              |
-| `minHeightScreen`     | Fills the viewport height, with additional support for iOS Safari.                                                                             |
-| `screenReaderOnly`    | Hides an element visually without hiding from screen readers and other ATs. <br /><small>(Credit: [Tailwind][credit:screenreaderonly])</small> |
-| `notScreenReaderOnly` | Reverts styles set by `screenReaderOnly`. <br /><small>(Credit: [Tailwind][credit:screenreaderonly])</small>                                   |
+| Key                   | Description                                                                                                                   |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `box`                 | Layout primitive <sup id="credit_note-1">[[1]](#credit_ref-1)</sup>                                                           |
+| `breakout`            | "Breakout" of a parent's `maxWidth` to fill the viewport width <sup id="credit_note-2">[[2]](#credit_ref-2)</sup>             |
+| `minHeightScreen`     | Fills the viewport height, with additional support for iOS Safari.                                                            |
+| `screenReaderOnly`    | Hides an element visually without hiding from screen readers and other ATs <sup id="credit_note-3">[[3]](#credit_ref-3)</sup> |
+| `notScreenReaderOnly` | Reverts styles set by `screenReaderOnly` <sup id="credit_note-3">[[3]](#credit_ref-3)</sup>                                   |
 
 ## Setup
 
@@ -106,7 +117,7 @@ To kickstart your mixins toolbox, `stitches-mixins` includes the following by de
 
 Use `include` like you would with any other [Stitches `util`][stitches:utils].
 
-[See the CodeSandbox Demo ↗][demo]
+[View the CodeSandbox Demo 🪣][demo]
 
 > 💡 Using `include` at the beginning of your style object is heavily recommended, allowing for easy overriding later
 
@@ -150,6 +161,15 @@ const SkipLink = styled("a", {
   // ...styles
 });
 ```
+
+## Credit
+
+1. [**^**](#credit_note-1) <strong id="credit_ref-1">Brent Jackson</strong>. [Reflexbox][credit:box].  
+   _Styles used with additional pseudo styles, and without margin reset._
+2. [**^**](#credit_note-2) <strong id="credit_ref-2">Sven Wolfermann</strong>. ["full viewport width image (container) inside article" (Codepen)][credit:breakout].  
+   _Styles used without modification._
+3. [**^**](#credit_note-3) <strong id="credit_ref-3">Tailwind</strong>. [Utilities for improving accessibility with screen readers][credit:screenreaderonly].  
+   _Styles used without modification._
 
 [demo]: https://joebell.co.uk/stitches-mixins
 [credit:box]: https://github.com/rebassjs/rebass/tree/master/packages/reflexbox
