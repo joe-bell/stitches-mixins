@@ -9,7 +9,7 @@ export const mixins = <T extends IStitchesMixins = {}>(
 ) => () => (
   key: keyof T | TDefaultStitchesMixin | (keyof T | TDefaultStitchesMixin)[]
 ) => {
-  const mixins = { ...customMixins, ...defaultMixins };
+  const mixins = { ...defaultMixins, ...customMixins };
 
   return Array.isArray(key)
     ? key.reduce((acc, cv) => ({ ...acc, ...mixins[cv] }), {})
