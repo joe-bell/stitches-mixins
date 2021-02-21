@@ -47,8 +47,8 @@
     "dev": "npm run build -- watch",
     "clean": "rimraf {dist,.rts2*}",
     "test": "jest",
-    "lint:src": "tsc --noEmit",
-    "lint:test": "tsc --noEmit test/*test.ts",
+    "lint:src": "tsc",
+    "lint:test": "tsc -p test/tsconfig.json",
     "lint": "concurrently \"npm:lint:*\"",
     "format": "prettier --write",
     "commit": "git-cz"
