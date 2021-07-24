@@ -62,7 +62,7 @@
     "@babel/preset-typescript": "7.14.5",
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
-    "@stitches/core": "0.2.2",
+    "@stitches/core": "0.2.3",
     "@types/jest": "26.0.24",
     "babel-jest": "27.0.6",
     "commitizen": "4.2.4",
