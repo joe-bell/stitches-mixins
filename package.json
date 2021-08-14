@@ -63,7 +63,7 @@
     "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
     "@stitches/core": "0.2.5",
-    "@types/jest": "26.0.24",
+    "@types/jest": "27.0.1",
     "babel-jest": "27.0.6",
     "commitizen": "4.2.4",
     "concurrently": "6.2.1",
