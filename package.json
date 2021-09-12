@@ -54,7 +54,7 @@
     "commit": "git-cz"
   },
   "peerDependencies": {
-    "@stitches/core": ">= 0.1.0-canary.3"
+    "@stitches/core": ">= 1.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.15.5",

@@ -1,15 +1,13 @@
-import { defaultMixins, TCSS, TDefaultStitchesMixin } from "./private";
+import type { CSS } from "@stitches/core";
+import { defaultMixins, TDefaultMixin } from "./private";
 
-export interface IStitchesMixins {
-  [key: string]: TCSS;
+export interface IMixins {
+  [key: string]: CSS;
 }
 
 export const mixins =
-  <T extends IStitchesMixins = {}>(customMixins?: T) =>
-  () =>
-  (
-    key: keyof T | TDefaultStitchesMixin | (keyof T | TDefaultStitchesMixin)[]
-  ) => {
+  <T extends IMixins = {}>(customMixins?: T) =>
+  (key: keyof T | TDefaultMixin | (keyof T | TDefaultMixin)[]) => {
     const mixins = { ...defaultMixins, ...customMixins };
 
     return Array.isArray(key)

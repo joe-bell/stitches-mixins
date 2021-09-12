@@ -1,20 +1,15 @@
-import { InternalCSS } from "@stitches/core";
+import type { CSS } from "@stitches/core";
 
-// @peduarte - "you probably shouldn't use the InternalCSS type"
-// me - https://i.gifer.com/NMHI.gif
-export type TCSS = InternalCSS;
-
-export type TDefaultStitchesMixin =
+export type TDefaultMixin =
   | "box"
   | "breakout"
   | "minHeightScreen"
   | "screenReaderOnly"
   | "notScreenReaderOnly";
 
-export interface IDefaultStitchesMixins
-  extends Record<TDefaultStitchesMixin, TCSS> {}
+export interface IDefaultMixins extends Record<TDefaultMixin, CSS> {}
 
-export const defaultMixins: IDefaultStitchesMixins = {
+export const defaultMixins: IDefaultMixins = {
   box: {
     minWidth: 0,
     boxSizing: "border-box",
