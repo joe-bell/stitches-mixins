@@ -24,27 +24,27 @@ importers:
   example:
     specifiers:
       "@stitches/react": 1.1.0
-      "@types/react": ^17.0.0
-      "@types/react-dom": ^17.0.0
-      "@vitejs/plugin-react-refresh": ^1.3.1
+      "@types/react": 17.0.0
+      "@types/react-dom": 17.0.0
+      "@vitejs/plugin-react-refresh": 1.3.1
       npe: 1.1.4
       react: ^17.0.0
       react-dom: ^17.0.0
-      stitches-mixins: 1.0.0-canary.2
-      typescript: ^4.3.5
-      vite: ^2.5.1
+      stitches-mixins: latest
+      typescript: 4.4.3
+      vite: 2.5.1
     dependencies:
       "@stitches/react": 1.1.0_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-      stitches-mixins: 1.0.0-canary.2_@stitches+react@1.1.0
+      stitches-mixins: link:../package
     devDependencies:
-      "@types/react": 17.0.20
-      "@types/react-dom": 17.0.9
-      "@vitejs/plugin-react-refresh": 1.3.6
+      "@types/react": 17.0.0
+      "@types/react-dom": 17.0.0
+      "@vitejs/plugin-react-refresh": 1.3.1
       npe: 1.1.4
       typescript: 4.4.3
-      vite: 2.5.6
+      vite: 2.5.1
 
   package:
     specifiers:
@@ -2259,17 +2259,6 @@ packages:
       rollup: 2.56.3
     dev: true
 
-  /@rollup/pluginutils/4.1.1:
-    resolution:
-      {
-        integrity: sha512-clDjivHqWGXi7u+0d2r2sBi4Ie6VLEAzWMIkvJLnDmxoOhBYOTfzGbOQBA32THHm11/LiJbd01tJUpJsbshSWQ==,
-      }
-    engines: { node: ">= 8.0.0" }
-    dependencies:
-      estree-walker: 2.0.2
-      picomatch: 2.3.0
-    dev: true
-
   /@sinonjs/commons/1.8.3:
     resolution:
       {
@@ -2462,13 +2451,23 @@ packages:
       }
     dev: true
 
-  /@types/react-dom/17.0.9:
+  /@types/react-dom/17.0.0:
     resolution:
       {
-        integrity: sha512-wIvGxLfgpVDSAMH5utdL9Ngm5Owu0VsGmldro3ORLXV8CShrL8awVj06NuEXFQ5xyaYfdca7Sgbk/50Ri1GdPg==,
+        integrity: sha512-lUqY7OlkF/RbNtD5nIq7ot8NquXrdFrjSOR6+w9a9RFQevGi1oZO1dcJbXMeONAPKtZ2UrZOEJ5UOCVsxbLk/g==,
       }
     dependencies:
       "@types/react": 17.0.20
+    dev: true
+
+  /@types/react/17.0.0:
+    resolution:
+      {
+        integrity: sha512-aj/L7RIMsRlWML3YB6KZiXB3fV2t41+5RBGYF8z+tAKU43Px8C3cYUZsDvf1/+Bm4FK21QWBrDutu8ZJ/70qOw==,
+      }
+    dependencies:
+      "@types/prop-types": 15.7.4
+      csstype: 3.0.8
     dev: true
 
   /@types/react/17.0.20:
@@ -2521,18 +2520,17 @@ packages:
       "@types/yargs-parser": 20.2.1
     dev: true
 
-  /@vitejs/plugin-react-refresh/1.3.6:
+  /@vitejs/plugin-react-refresh/1.3.1:
     resolution:
       {
-        integrity: sha512-iNR/UqhUOmFFxiezt0em9CgmiJBdWR+5jGxB2FihaoJfqGt76kiwaKoVOJVU5NYcDWMdN06LbyN2VIGIoYdsEA==,
+        integrity: sha512-VxHkrvOOTnMGWq9BveEN5ufmfDfaGxfawCymlKdF+X0RApCr0jQFzOyewhmSSCgGHjqnpRj+7TTDebjBkB3qhg==,
       }
     engines: { node: ">=12.0.0" }
     dependencies:
       "@babel/core": 7.15.5
       "@babel/plugin-transform-react-jsx-self": 7.14.9_@babel+core@7.15.5
       "@babel/plugin-transform-react-jsx-source": 7.14.5_@babel+core@7.15.5
-      "@rollup/pluginutils": 4.1.1
-      react-refresh: 0.10.0
+      react-refresh: 0.9.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7163,10 +7161,10 @@ packages:
       }
     dev: true
 
-  /react-refresh/0.10.0:
+  /react-refresh/0.9.0:
     resolution:
       {
-        integrity: sha512-PgidR3wST3dDYKr6b4pJoqQFpPGNKDSCDx4cZoshjXipw3LzO7mG1My2pwEzz2JVkF+inx3xRpDeQLFQGH/hsQ==,
+        integrity: sha512-Gvzk7OZpiqKSkxsQvO/mbTN1poglhmAV7gR/DdIrRrSMXraRQQlfikRJOr3Nb9GTMPC5kof948Zy6jJZIFtDvQ==,
       }
     engines: { node: ">=0.10.0" }
     dev: true
@@ -7803,23 +7801,6 @@ packages:
     resolution: { integrity: sha1-W+L0TW3vhWzATZtI9/IxgCI6qMk= }
     dev: true
 
-  /stitches-mixins/1.0.0-canary.2_@stitches+react@1.1.0:
-    resolution:
-      {
-        integrity: sha512-5MhExL8nuy7+Ut4AKuIdS5MvGa35fD52TFWlRayf79FMd0zHaFU567INmizLmOnxtEewErCmkuTvZ7Q3K1gh4A==,
-      }
-    peerDependencies:
-      "@stitches/core": ">= 1.1.0"
-      "@stitches/react": ">= 1.1.0"
-    peerDependenciesMeta:
-      "@stitches/core":
-        optional: true
-      "@stitches/react":
-        optional: true
-    dependencies:
-      "@stitches/react": 1.1.0_react@17.0.2
-    dev: false
-
   /string-argv/0.3.1:
     resolution:
       {
@@ -8378,10 +8359,10 @@ packages:
       }
     dev: true
 
-  /vite/2.5.6:
+  /vite/2.5.1:
     resolution:
       {
-        integrity: sha512-P++qzXuOPhTql8iDamsatlJfD7/yGi8NCNwzyqkB2p0jrNJC567WEdXiKn3hQ+ZV8amQmB2dTH6svo3Z2tJ6MQ==,
+        integrity: sha512-FwmLbbz8MB1pBs9dKoRDgpiqoijif8hSK1+NNUYc12/cnf+pM2UFhhQ1rcpXgbMhm/5c2USZdVAf0FSkSxaFDA==,
       }
     engines: { node: ">=12.2.0" }
     hasBin: true
