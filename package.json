@@ -3,7 +3,7 @@
   "name": "root",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "build": "pnpm run build --r --stream",
+    "build": "pnpm run build --filter ./package && pnpm run build --filter ./example",
     "lint": "syncpack list-mismatches && pnpm run lint --r --parallel",
     "test": "pnpm run test --r --stream",
     "setup": "npm i -g pnpm@6.15.0",
