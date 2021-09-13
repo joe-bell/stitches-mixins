@@ -2,8 +2,8 @@
   "private": true,
   "name": "example",
   "scripts": {
-    "preinstall": "if [[ ${CODESANDBOX_SSE} == \"true\" ]]; then npe dependencies.stitches-mixins 'latest'; else exit 0; fi",
     "lint": "tsc",
+    "sandbox": "npx npe dependencies.stitches-mixins 'latest' && npm run start",
     "start": "vite",
     "build": "vite build"
   },
