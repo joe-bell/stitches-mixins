@@ -97,7 +97,7 @@ Default mixins can be overridden by defining custom mixins with the same `key`.
 
    ```tsx
    // stitches.config.ts
-   import { createCss } from "@stitches/react";
+   import { createStitches } from "@stitches/react";
    import { mixins } from "stitches-mixins";
 
    export const { css, styled } = createCss({
