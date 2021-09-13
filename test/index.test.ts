@@ -1,5 +1,5 @@
 import { createStitches } from "@stitches/core";
-import { mixins } from "../src";
+import { mixins } from "stitches-mixins";
 
 const theme = { colors: { orchid: "orchid" }, space: { md: "1rem" } };
 

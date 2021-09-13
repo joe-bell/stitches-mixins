@@ -2,12 +2,12 @@
 
 <p align="center">
   <strong>
-    Sass-style shorthand utils for <a href="https://github.com/modulz/stitches">Stitches</a> 🥣
+    Shorthand utils for <a href="https://github.com/modulz/stitches">Stitches</a> 🥣
   </strong>
 </p>
 
 <p align="center">
-  <a href="https://joebell.co.uk/stitches-mixins">View the CodeSandbox Demo 🪣</a>
+  <a href="https://joebell.co.uk/stitches-mixins">View the CodeSandbox Example 🪣</a>
 </p>
 
 <p align="center">

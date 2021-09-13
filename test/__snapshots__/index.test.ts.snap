@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`mixins custom mixins can be included 1`] = `":root{--colors--orchid:orchid;--space--md:1rem;}"`;
+exports[`mixins custom mixins can be included 1`] = `"--sxs{--sxs:0 t-gCfUPt}@media{:root,.t-gCfUPt{--colors-orchid:orchid;--space-md:1rem}}"`;
 
-exports[`mixins custom mixins can be included 2`] = `":root{--colors--orchid:orchid;--space--md:1rem;}.sxm8872{margin:0;min-width:0;box-sizing:border-box;}.sxm8872::before, .sxm8872::after{box-sizing:inherit;}.sxm8872{box-shadow:0 25px 50px -12px var(--shadows-orchid);}"`;
+exports[`mixins custom mixins can be included 2`] = `"--sxs{--sxs:0 t-gCfUPt}@media{:root,.t-gCfUPt{--colors-orchid:orchid;--space-md:1rem}}--sxs{--sxs:2 c-jNRlAV}@media{.c-jNRlAV{min-width:0;box-sizing:border-box}.c-jNRlAV::before,.c-jNRlAV::after{box-sizing:inherit}}"`;
 
-exports[`mixins individual mixins can be included and overridden 1`] = `":root{--colors--orchid:orchid;--space--md:1rem;}"`;
+exports[`mixins individual mixins can be included and overridden 1`] = `"--sxs{--sxs:0 t-gCfUPt}@media{:root,.t-gCfUPt{--colors-orchid:orchid;--space-md:1rem}}"`;
 
-exports[`mixins individual mixins can be included and overridden 2`] = `":root{--colors--orchid:orchid;--space--md:1rem;}.sx5vjgy{margin:0;min-width:0;box-sizing:border-box;}.sx5vjgy::before, .sx5vjgy::after{box-sizing:inherit;}.sx5vjgy{margin:var(--space-md);}"`;
+exports[`mixins individual mixins can be included and overridden 2`] = `"--sxs{--sxs:0 t-gCfUPt}@media{:root,.t-gCfUPt{--colors-orchid:orchid;--space-md:1rem}}--sxs{--sxs:2 c-fovnzX}@media{.c-fovnzX{min-width:0;box-sizing:border-box}.c-fovnzX::before,.c-fovnzX::after{box-sizing:inherit}.c-fovnzX{margin:var(--space-md)}}"`;
 
-exports[`mixins mixins can be nested 1`] = `":root{--colors--orchid:orchid;--space--md:1rem;}"`;
+exports[`mixins mixins can be nested 1`] = `"--sxs{--sxs:0 t-gCfUPt}@media{:root,.t-gCfUPt{--colors-orchid:orchid;--space-md:1rem}}"`;
 
-exports[`mixins mixins can be nested 2`] = `":root{--colors--orchid:orchid;--space--md:1rem;}.sx3aghb{margin:-1px;min-width:0;box-sizing:border-box;}.sx3aghb::before, .sx3aghb::after{box-sizing:inherit;}.sx3aghb{box-shadow:0 25px 50px -12px var(--shadows-orchid);position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0;}.sx3aghb:focus{position:static;width:auto;height:auto;padding:0;margin:0;overflow:visible;clip:auto;white-space:normal;}"`;
+exports[`mixins mixins can be nested 2`] = `"--sxs{--sxs:0 t-gCfUPt}@media{:root,.t-gCfUPt{--colors-orchid:orchid;--space-md:1rem}}--sxs{--sxs:2 c-jqIsIq}@media{.c-jqIsIq{min-width:0;box-sizing:border-box}.c-jqIsIq::before,.c-jqIsIq::after{box-sizing:inherit}.c-jqIsIq{box-shadow:0 25px 50px -12px var(--shadows-orchid);position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.c-jqIsIq:focus{position:static;width:auto;height:auto;padding:0;margin:0;overflow:visible;clip:auto;white-space:normal}}"`;
 
-exports[`mixins multiple mixins can be included and overridden 1`] = `":root{--colors--orchid:orchid;--space--md:1rem;}"`;
+exports[`mixins multiple mixins can be included and overridden 1`] = `"--sxs{--sxs:0 t-gCfUPt}@media{:root,.t-gCfUPt{--colors-orchid:orchid;--space-md:1rem}}"`;
 
-exports[`mixins multiple mixins can be included and overridden 2`] = `":root{--colors--orchid:orchid;--space--md:1rem;}.sxyb5e0{margin:0;min-width:0;box-sizing:border-box;}.sxyb5e0::before, .sxyb5e0::after{box-sizing:inherit;}.sxyb5e0{min-height:100vh;}@supports (-webkit-touch-callout: none){.sxyb5e0{min-height:-webkit-fill-available;}}.sxyb5e0{margin:var(--space-md);}"`;
+exports[`mixins multiple mixins can be included and overridden 2`] = `"--sxs{--sxs:0 t-gCfUPt}@media{:root,.t-gCfUPt{--colors-orchid:orchid;--space-md:1rem}}--sxs{--sxs:2 c-bIRQaM}@media{.c-bIRQaM{min-width:0;box-sizing:border-box}.c-bIRQaM::before,.c-bIRQaM::after{box-sizing:inherit}.c-bIRQaM{min-height:100vh}@supports (-webkit-touch-callout: none){.c-bIRQaM{min-height:-webkit-fill-available}}.c-bIRQaM{margin:var(--space-md)}}"`;
