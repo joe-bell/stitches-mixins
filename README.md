@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://joebell.co.uk/stitches-mixins">View the CodeSandbox Example 🪣</a>
+  <a href="https://codesandbox.io/s/github/joe-bell/stitches-mixins/tree/main/example?file=/src/App.tsx">View the CodeSandbox Example 🪣</a>
 </p>
 
 <p align="center">
