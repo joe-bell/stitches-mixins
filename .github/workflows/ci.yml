@@ -1,4 +1,4 @@
-name: Node.js CI
+name: CI
 
 on:
   push:
@@ -25,9 +25,11 @@ jobs:
         uses: actions/setup-node@v2.4.0
         with:
           node-version: "${{ steps.nvm.outputs.NVMRC }}"
-      - run: npm ci
-      - run: npm run build
+
+      - run: npm run setup && pnpm install
+      - run: pnpm run build
       - run: npx prettier . --check --ignore-path .gitignore
-      - run: npm run lint
+      - run: pnpm run lint
         env:
           CI: true
+      - run: pnpm run test

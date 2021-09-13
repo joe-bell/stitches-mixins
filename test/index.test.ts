@@ -1,7 +1,7 @@
-import { createCss } from "@stitches/core";
-import { mixins } from "../src";
+import { createStitches } from "@stitches/core";
+import { mixins } from "stitches-mixins";
 
-const theme = { colors: { $orchid: "orchid" }, space: { $md: "1rem" } };
+const theme = { colors: { orchid: "orchid" }, space: { md: "1rem" } };
 
 const customMixins = {
   orchidShadow: {
@@ -11,7 +11,7 @@ const customMixins = {
 
 describe("mixins", () => {
   test("individual mixins can be included and overridden", () => {
-    const stitches = createCss({
+    const stitches = createStitches({
       theme,
       utils: {
         include: mixins(),
@@ -32,7 +32,7 @@ describe("mixins", () => {
   });
 
   test("multiple mixins can be included and overridden", () => {
-    const stitches = createCss({
+    const stitches = createStitches({
       theme,
       utils: {
         include: mixins(),
@@ -53,7 +53,7 @@ describe("mixins", () => {
   });
 
   test("custom mixins can be included", () => {
-    const stitches = createCss({
+    const stitches = createStitches({
       theme,
       utils: {
         include: mixins(customMixins),
@@ -73,11 +73,11 @@ describe("mixins", () => {
   });
 
   test("mixins can be nested", () => {
-    const stitches = createCss({
+    const stitches = createStitches({
       theme,
       utils: {
         include: mixins(customMixins),
-        someShorthandUtil: (config) => (value: boolean) =>
+        someShorthandUtil: (value: boolean) =>
           value && {
             boxShadow: "0 25px 50px -12px orchid",
           },

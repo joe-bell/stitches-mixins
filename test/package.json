@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "test",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "jest": {
+    "testMatch": [
+      "**/test/*.{ts,tsx}"
+    ]
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "tsc"
+  },
+  "dependencies": {
+    "@stitches/core": "1.1.0",
+    "stitches-mixins": "workspace:*"
+  },
+  "devDependencies": {
+    "@babel/core": "7.15.5",
+    "@babel/preset-env": "7.15.6",
+    "@babel/preset-typescript": "7.15.0",
+    "@stitches/core": "1.1.0",
+    "@types/jest": "27.0.1",
+    "babel-jest": "27.1.1",
+    "jest": "27.1.1",
+    "typescript": "4.4.3"
+  }
+}
