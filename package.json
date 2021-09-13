@@ -7,6 +7,7 @@
     "lint": "pnpm run lint --r --parallel",
     "test": "pnpm run test --r --stream",
     "setup": "npm i -g pnpm@6.15.0",
+    "start": "pnpm run start --filter example",
     "commit": "git-cz"
   },
   "engines": {

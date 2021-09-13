@@ -3,7 +3,6 @@
   "name": "example",
   "scripts": {
     "lint": "tsc",
-    "sandbox": "npx npe dependencies.stitches-mixins 'latest' && npm run start",
     "start": "vite",
     "build": "vite build"
   },
