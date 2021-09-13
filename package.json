@@ -4,7 +4,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "pnpm run build --r --stream",
-    "lint": "pnpm run lint --r --parallel",
+    "lint": "syncpack list-mismatches && pnpm run lint --r --parallel",
     "test": "pnpm run test --r --stream",
     "setup": "npm i -g pnpm@6.15.0",
     "start": "pnpm run start --filter example",
@@ -32,6 +32,19 @@
   "lint-staged": {
     "*": "prettier --ignore-unknown --write"
   },
+  "syncpack": {
+    "peer": false,
+    "versionGroups": [
+      {
+        "dependencies": [
+          "stitches-mixins"
+        ],
+        "packages": [
+          "example"
+        ]
+      }
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
@@ -39,6 +52,7 @@
     "cz-conventional-changelog": "3.3.0",
     "husky": "4.3.8",
     "lint-staged": "11.1.2",
-    "prettier": "2.4.0"
+    "prettier": "2.4.0",
+    "syncpack": "5.8.15"
   }
 }
