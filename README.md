@@ -175,7 +175,7 @@ const SkipLink = styled("a", {
 3. [**^**](#credit_note-3) <strong id="credit_ref-3">Tailwind</strong>. [Utilities for improving accessibility with screen readers][credit:screenreaderonly].  
    _Styles used without modification._
 
-[demo]: https://joebell.co.uk/stitches-mixins
+[demo]: https://codesandbox.io/s/github/joe-bell/stitches-mixins/tree/main/example?file=/src/App.tsx
 [credit:box]: https://github.com/rebassjs/rebass/tree/master/packages/reflexbox
 [credit:breakout]: https://codepen.io/maddesigns/pen/rOMgpQ/
 [credit:screenreaderonly]: https://tailwindcss.com/docs/screen-readers
