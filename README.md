@@ -1,3 +1,11 @@
+> **Warning**
+>
+> **`stitches-mixins` is in maintenance mode**
+>
+> The package is stable and safe to use, but no new features will be added
+
+---
+
 <h1 align="center">Stitches Mixins</h1>
 
 <p align="center">
